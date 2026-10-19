@@ -1,0 +1,384 @@
+
+@font-face {
+    font-family: "Esteban-Regular";
+    src: url(src2/Fonte-letra/Esteban-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+body.inicial-page-background{
+    background-color: rgb(226, 188, 152);
+    background-image: url(src/imagens/fundo-page-1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.text-container{
+    animation: pulse;
+    animation-duration: 4s;
+}
+
+.ilustra-detetive{
+    animation: bounce;
+    animation-duration: 3s;
+    
+}
+
+.ilustra-detetive, .text-container{
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*--------------PAGINA INDEX------------*/
+/*----Esta index não tem na principal------------*/
+
+
+.inicial-page{
+    
+    gap: 1.8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container{
+    width: 99%;
+    padding: 1.5rem;
+
+   .text-container{
+        width: 100%;
+        min-height: 100%;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+    h1{
+        font-size: 3rem;
+        color: #fff;  
+        text-align: center;
+       
+    }
+
+    .text-container span{
+        font-size: 4.5rem;
+        color: #fcc803;
+    }
+
+
+   .cadeado{
+    width: 11rem;
+   }
+}
+
+
+.detetive{
+    width: 15rem;   
+}
+
+.grid{
+    grid-column: 2/3;
+    margin: auto;
+}
+
+
+
+
+/*--------------PAGINA FLIPCARDS / grid-pages ------------*/
+    
+    
+.principal5-page .botao-desafio{
+        width: 99%;
+        height: 70%;
+        padding-bottom: 1rem;
+
+    img{
+        max-width: 60vw;
+    }
+}
+
+    .principal5-page .bloco-pergunta{
+        height: 6rem;
+       
+    }
+
+    .principal5-page .desafio-numero{
+        grid-column: 1/4;
+      
+        
+    }
+
+ .principal5-page #pointer {
+        width: 10rem;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .principal5-page  #pointer:before {
+        border-top: 30px solid transparent;
+        
+    }
+    
+      
+    .principal5-page .desafio-numero::before{
+        right: 19.2rem;
+        bottom: 1rem;
+    }
+  
+    .principal5-page .style-page .bloco-pergunta{
+        width: 10rem;
+        gap: 5rem;
+    }
+   
+    .card-container{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          
+          gap: 0.8rem;
+          padding: 0rem  10px;
+          
+    }
+
+    .card-container .card-style{
+        width: 30vw;
+        height: 17vh;
+        border-radius: 20px;
+        font-size: 12px;
+            
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s; 
+
+        font-weight: 600;
+        word-wrap: break-word;
+        white-space: normal;
+        cursor: pointer;
+        
+    }
+    
+    
+
+    .principal5-page .botao-proxima{
+        grid-column: 1/4;
+        
+    }
+
+    .card-front, .card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backface-visibility: hidden;
+        padding: 0.5rem;
+
+    }
+  
+    .card-front{
+            transform: rotateY(0deg);  
+            text-align: center;
+
+        }
+
+    .card-back{
+            transform: rotatey(180deg);
+        }
+  
+        .card-back .opcao-correta{
+            max-width: 15vw;
+            min-height: 10vh;
+        }
+
+        .card-back .opcao-errada{
+            max-width: 20vw;
+            min-height: 10vh;
+        } 
+
+
+        /*Cards-cores*/
+        
+        .card-cor1{
+            background-color: #e1baa1;
+            color: #7b4c33;
+        }
+
+        .card-cor2, .card-cor4{
+            background-color: #7b4c33;
+            color: #fff;
+        }
+
+        .card-cor3, .card-cor9{
+            background-color: #ffc07a;
+            color: #663f2a;
+        }
+
+        .card-cor5, .card-cor7{
+            background-color: #f1c296;
+            color: #7b4c33;
+        }
+
+        .card-cor6, .card-cor8{
+           background-color: #b26136;
+            color: #fff;
+        }
+
+
+        .principal5-page .botao-proxima{
+            margin: 2rem auto;
+            height: 9.1rem;
+        }
+        /*Cards-cores*/
+
+        .resultado-geral-container{
+            background-image: url(src/imagens/fundo-resultado.png);
+             min-height: 100vh;
+             background-repeat: no-repeat;
+             background-size: cover;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        
+        .resultado-geral-box{
+           position: relative;
+            width: min(100%, 300px);
+            aspect-ratio: 9/16;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1.1rem;
+            padding: 2.5rem;
+
+               img{
+                 width: clamp(10rem, 5%, 180px);
+               }
+
+            .trofeu{
+                margin-top: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+         .geral-titulo {
+            width: 20rem;
+            height: 50px;
+            position: relative;
+            background-color: #d38d4b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #fff;
+            font-family: "Esteban-Regular", sans-serif;
+    }
+
+    .geral-titulo:before {
+        content: "";
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-right: 30px solid #fae9de;
+        border-top: 20px solid transparent;
+        border-bottom: 30px solid transparent;
+    }
+
+    .geral-titulo:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 30px solid #663f2a;
+        border-top: 20px solid transparent;
+        border-bottom: 30px solid transparent;
+    }
+        .resultado-geral-box .trofeu img{
+            max-width: 40vh;
+            min-height: 30vh;
+            margin-top: -70px;
+        }
+
+        .geral-message{
+            width: 19rem;
+            height: 17rem;
+           
+            display: flex;
+            justify-content: center;
+        
+            img{
+                width: 75%;
+            }
+
+        }
+
+    
+        /*page-loser*/
+
+        .interrogacao{
+            min-width: 40vh;
+            min-height: 30vh;
+            display: flex;
+            justify-content: center;
+            
+            img{
+                width: 65%;
+            }
+        }
+
+
+         @media(min-width: 360px){
+            
+                .principal5-page .botao-desafio{
+                    width: 100%;
+                    img{
+                        max-width: 60vw;
+                    }
+
+                }
+                .card-container{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                  padding-left: 0.5rem;
+                }
+            
+        
+                .card-container .card-style{
+                    width: 28vw;
+                    height: 14vh;
+                    }
+
+               
+    
+    }
+
+             
+
+
+       
+     
+    
+
+   
