@@ -17,7 +17,7 @@
 
 body.inicial-page-background{
     background-color: rgb(226, 188, 152);
-    background-image: url(src/imagens/fundo-page-1.png);
+    background-image: url(../imagens/fundo-page-1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center top;
