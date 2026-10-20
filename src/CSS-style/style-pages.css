@@ -35,9 +35,9 @@
 }
 
 
-.custom-background{
+body.custom-background{
     background-color: rgb(226, 188, 152);
-    background: url(src/imagens/fundo-pagina-principal.png);
+    background: url(../imagens/fundo-pagina-principal.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: left top;
