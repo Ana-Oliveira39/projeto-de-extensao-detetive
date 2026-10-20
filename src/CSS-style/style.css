@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Esteban-Regular";
-    src: url(src2/Fonte-letra/Esteban-Regular.ttf) format("truetype");
+    src: url(../Fonte-letra/Esteban-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
@@ -246,7 +246,7 @@ body.inicial-page-background{
         /*Cards-cores*/
 
         .resultado-geral-container{
-            background-image: url(src/imagens/fundo-resultado.png);
+            background-image: url(../imagens/fundo-resultado.png);
              min-height: 100vh;
              background-repeat: no-repeat;
              background-size: cover;
