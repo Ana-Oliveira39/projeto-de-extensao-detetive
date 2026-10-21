@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Esteban-Regular";
-    src: url(../Fonte-letra/Esteban-Regular.ttf) format("truetype");
+    src: url(../../Fonte-letra/Esteban-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
@@ -24,18 +24,18 @@ body.inicial-page-background{
     background-attachment: fixed;
 }
 
-.text-container{
+.text-container, .interrogacao{
     animation: pulse;
     animation-duration: 4s;
 }
 
-.ilustra-detetive{
+.ilustra-detetive, .trofeu{
     animation: bounce;
     animation-duration: 3s;
     
 }
 
-.ilustra-detetive, .text-container{
+.ilustra-detetive, .text-container, .trofeu, .interrogacao{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
