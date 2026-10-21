@@ -96,7 +96,11 @@ body.custom-background{
             margin-left: 5px;
             font-family: "Gagalin-Regular", sans-serif;
         }
-  
+
+    .principal3-page .notificacao{
+            padding: 1rem;
+        }
+
     #pointer {
         width: 15rem;
         height: 40px;
