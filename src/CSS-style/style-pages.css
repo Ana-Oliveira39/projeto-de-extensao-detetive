@@ -248,7 +248,14 @@ body.custom-background{
         justify-content: center;
         align-items: center;
     }
-    
+
+    .botao-proxima:active{
+        background-color: transparent;
+    }
+    .botao-proxima button:active{
+        background-color: #e0a029;
+    }
+
     /*--------------grid-pages---------------------*/
 
   .grid-pages{
