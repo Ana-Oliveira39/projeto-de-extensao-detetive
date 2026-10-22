@@ -224,6 +224,7 @@ body.custom-background{
         cursor: pointer;
         transition: background 0.3s ease;
         text-transform: uppercase;
+        -webkit-tap-highlight-color: transparent;
          
     }
 
