@@ -20,7 +20,8 @@ let respostaCerta =  Number(localStorage.getItem('certo')) || 0;
 
 if(pagina.includes('index.html')){
     if(localStorage.length > 0){
-        localStorage.clear()
+        localStorage.clear('certo', respostaCerta);
+        localStorage.clear(chavepagina, 'true');
     }
 }
 
