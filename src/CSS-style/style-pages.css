@@ -177,6 +177,7 @@ body.custom-background{
             cursor: pointer;
            position: relative;
            transition: background 0.3s ease;
+            -webkit-tap-highlight-color: transparent;
 
 
             span{
