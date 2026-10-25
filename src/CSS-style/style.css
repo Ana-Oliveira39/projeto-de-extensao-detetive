@@ -168,6 +168,7 @@ body.inicial-page-background{
         word-wrap: break-word;
         white-space: normal;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
         
     }
     
