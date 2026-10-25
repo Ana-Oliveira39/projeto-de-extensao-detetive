@@ -18,6 +18,12 @@ let resolvido = localStorage.getItem(chavepagina) === 'true';
 
 let respostaCerta =  Number(localStorage.getItem('certo')) || 0;
 
+if(pagina.includes('index.html')){
+    if(localStorage.length > 0){
+        localStorage.clear()
+    }
+}
+
 respostas.forEach(resposta =>{
     resposta.addEventListener('click', ()=>{
         if(resolvido){
@@ -101,8 +107,6 @@ if(botaoFlip){
 
 if(botaoReiniciar){
     botaoReiniciar.addEventListener('click', () =>{
-        localStorage.clear('certo', respostaCerta);
-        localStorage.clear(chavepagina, 'true');
         window.location.href = 'index.html';
     });
 }
