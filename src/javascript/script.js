@@ -18,7 +18,7 @@ let resolvido = localStorage.getItem(chavepagina) === 'true';
 
 let respostaCerta =  Number(localStorage.getItem('certo')) || 0;
 
-if(pagina.includes('index.html')){
+if(pagina.includes('detetive')){
     if(localStorage.length > 0){
         localStorage.clear('certo', respostaCerta);
         localStorage.clear(chavepagina, 'true');
