@@ -23,7 +23,7 @@ if(botaoComecar){
     botaoComecar.addEventListener('click', () =>{
         localStorage.clear('certo', respostaCerta);
         localStorage.clear(chavepagina, 'true');
-        window.location.href = 'notificacao.html';
+        window.location.href = 'index.html';
     });
 }
 
