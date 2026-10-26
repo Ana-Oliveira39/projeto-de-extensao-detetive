@@ -7,6 +7,7 @@ const cardStyle = document.querySelectorAll('.card-style');
 const cardCorreto = document.querySelectorAll('.card-correto');
 const botaoFlip = document.querySelector('.botao-evento-proxima');
 const botaoReiniciar = document.querySelector('#reiniciar');
+const botaoComecar = document.querySelector('#botaocomecar');
 const resultado = document.getElementById('resultado');
 
 
@@ -18,11 +19,12 @@ let resolvido = localStorage.getItem(chavepagina) === 'true';
 
 let respostaCerta =  Number(localStorage.getItem('certo')) || 0;
 
-if(pagina.includes('projeto-de-extensao-detetive')){
-    if(localStorage.length > 0){
+if(botaoComecar){
+    botaoComecar.addEventListener('click', () =>{
         localStorage.clear('certo', respostaCerta);
         localStorage.clear(chavepagina, 'true');
-    }
+        window.location.href = 'notificacao.html';
+    });
 }
 
 respostas.forEach(resposta =>{
